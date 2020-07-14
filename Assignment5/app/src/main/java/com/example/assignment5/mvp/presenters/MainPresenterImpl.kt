@@ -15,7 +15,7 @@ class MainPresenterImpl: MainPresenter, AbstractBasePresenter<MainView>() {
 
 
 
-    private val mTourModel: TourModel= TourModelImpl
+    var mTourModel: TourModel= TourModelImpl
 
 
     override fun onUiReady(lifecycleOwner: LifecycleOwner) {

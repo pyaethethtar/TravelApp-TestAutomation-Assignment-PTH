@@ -8,7 +8,7 @@ import com.example.assignment5.mvp.views.DetailsView
 
 class DetailsPresenterImpl: DetailsPresenter, AbstractBasePresenter<DetailsView>() {
 
-    private val mTourModel: TourModel = TourModelImpl
+    var mTourModel: TourModel = TourModelImpl
 
     override fun onTourDetailsUiReady(lifecycleOwner: LifecycleOwner, name: String) {
         mTourModel.getAllToursByName(name)?.observe(
